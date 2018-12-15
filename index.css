@@ -38,13 +38,13 @@ body {
     transform-origin: 50% 50%;
     transform: perspective(900px) rotate3d(1,1,0,-45deg);
 }
-.cube > span {
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    opacity: 0.8;
-}
-    /* FACES */
+/* FACES */
+    .cube > span {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        opacity: 0.8;
+    }
     .cube .n1 {
         left: 0;
         top: 0;
