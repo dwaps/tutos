@@ -11,7 +11,25 @@
 
     for (controlArea of controlAreas) {
         controlArea.addEventListener('mouseover', e => {
-            if (e.target.className == 'a-top') cube.classList.add('cubeToTop')
+
+            for (let moveClass of moveClasses) {
+                cube.classList.remove(moveClass);
+            }
+
+            switch (e.target.className) {
+                case 'a-top':
+                    cube.classList.add('cubeToTop');
+                    break
+                case 'a-right':
+                    cube.classList.add('cubeToRight');
+                    break
+                case 'a-bottom':
+                    cube.classList.add('cubeToBottom');
+                    break
+                case 'a-left':
+                    cube.classList.add('cubeToLeft');
+                    break
+            }
         })
     }
 })();

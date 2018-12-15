@@ -34,6 +34,7 @@ body {
     margin: -100px 0 0 -100px;
     width: 200px;
     height: 200px;
+    transition: all 1s ease;
     transform-style: preserve-3d;
     transform-origin: 50% 50%;
     transform: perspective(900px) rotate3d(1,1,0,-45deg);
@@ -175,7 +176,8 @@ body {
             border-left: 50vw solid crimson;
             z-index: 1;
         }
-        .cubeToTop {
-            transform: perspective(900px) rotate3d(5,0,-1,110deg);
-            transition: all 1s ease;
-        }
+        /* MOVEMENTS */
+        .cubeToTop { transform: perspective(900px) rotate3d(5,0,-1,110deg); }
+        .cubeToRight { transform: perspective(900px) rotate3d(0,5,-1,135deg); }
+        .cubeToBottom { transform: perspective(900px) rotate3d(-5,0,1,160deg); }
+        .cubeToLeft { transform: perspective(900px) rotate3d(0,-5,1,165deg); }
