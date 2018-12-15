@@ -28,7 +28,7 @@ body {
 }
 
 .cube {
-    background: red;
+    background: purple; /* debug */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,3 +36,14 @@ body {
     width: 200px;
     height: 200px;
 }
+.cube > span {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.8;
+}
+    .cube .n1 {
+        left: 0;
+        top: 0;
+        background: red;
+    }
