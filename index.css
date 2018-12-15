@@ -79,3 +79,9 @@ body {
         transform-origin: 0 100%;
         transform: translate3d(0,0,100px) rotate3d(1, 0, 0, 90deg);
     }
+    .cube .n6 {
+        left: 0;
+        top: 0;
+        background: blueviolet;
+        transform: translate3d(0,0,100px) translate3d(0,0,-200px) rotate3d(1,0,0,180deg);
+    }
