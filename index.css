@@ -94,6 +94,7 @@ body {
         height: 20px;
         border-radius: 50%;
         background-color: #fff;
+        box-shadow: inset -3px -3px 5px rgba(0,0,0,0.3);
         opacity: 0.9;
     }
     .cube .d-50-50 {
