@@ -109,3 +109,11 @@ body {
         left: 75%;
         top: 25%;
     }
+    .cube .d-25-25 {
+        left: 25%;
+        top: 25%;
+    }
+    .cube .d-75-75 {
+        left: 75%;
+        top: 75%;
+    }
