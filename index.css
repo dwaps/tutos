@@ -134,44 +134,48 @@ body {
         height: 100vh;
         overflow: hidden;
     }
-    .a-top {
-        display: block;
-        position: absolute;
-        top: -12.5vh; left: -12.5vw;
-        width: 25vw;
-        margin: auto;
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        border-top: 50vh solid orangered;
-        z-index: 2;
-    }
-    .a-right {
-        display: block;
-        position: absolute;
-        right: -12.5vh; top: -12.5vw;
-        height: 25vw;
-        border-top: 50vh solid transparent;
-        border-bottom: 50vh solid transparent;
-        border-right: 50vw solid teal;
-        z-index: 1;
-    }
-    .a-bottom {
-        display: block;
-        position: absolute;
-        bottom: -12.5vh; left: -12.5vw;
-        width: 25vw;
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        border-bottom: 50vh solid rebeccapurple;
-        z-index: 2;
-    }
-    .a-left {
-        display: block;
-        position: absolute;
-        left: -12.5vh; top: -12.5vw;
-        height: 25vw;
-        border-top: 50vh solid transparent;
-        border-bottom: 50vh solid transparent;
-        border-left: 50vw solid crimson;
-        z-index: 1;
-    }
+        .a-top {
+            display: block;
+            position: absolute;
+            top: -12.5vh; left: -12.5vw;
+            width: 25vw;
+            margin: auto;
+            border-left: 50vw solid transparent;
+            border-right: 50vw solid transparent;
+            border-top: 50vh solid orangered;
+            z-index: 2;
+        }
+        .a-right {
+            display: block;
+            position: absolute;
+            right: -12.5vh; top: -12.5vw;
+            height: 25vw;
+            border-top: 50vh solid transparent;
+            border-bottom: 50vh solid transparent;
+            border-right: 50vw solid teal;
+            z-index: 1;
+        }
+        .a-bottom {
+            display: block;
+            position: absolute;
+            bottom: -12.5vh; left: -12.5vw;
+            width: 25vw;
+            border-left: 50vw solid transparent;
+            border-right: 50vw solid transparent;
+            border-bottom: 50vh solid rebeccapurple;
+            z-index: 2;
+        }
+        .a-left {
+            display: block;
+            position: absolute;
+            left: -12.5vh; top: -12.5vw;
+            height: 25vw;
+            border-top: 50vh solid transparent;
+            border-bottom: 50vh solid transparent;
+            border-left: 50vw solid crimson;
+            z-index: 1;
+        }
+        .cubeToTop {
+            transform: perspective(900px) rotate3d(5,0,-1,110deg);
+            transition: all 1s ease;
+        }
