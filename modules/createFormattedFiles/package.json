@@ -1,0 +1,28 @@
+{
+  "name": "create-formatted-files",
+  "version": "1.0.0",
+  "description": "Pour le projet Android : crée des fichiers formattés à partir de fichiers nommés index",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "bin": {
+    "buildFiles": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwaps/form-to-json.git"
+  },
+  "author": "Michael CORNILLON <contact@dwaps.fr> (https://dwaps.fr)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwaps/form-to-json/issues"
+  },
+  "homepage": "https://github.com/dwaps/form-to-json#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  }
+}

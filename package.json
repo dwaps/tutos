@@ -1,0 +1,13 @@
+{
+  "name": "projet-app-tuto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd modules/createFormattedFiles/ && npm i && npm link && buildFiles && npm unlink && cd -"
+  },
+  "keywords": [],
+  "author": "Michael CORNILLON <contact@dwaps.fr> (https://dwaps.fr)",
+  "license": "ISC"
+}
