@@ -44,6 +44,7 @@ body {
     height: inherit;
     opacity: 0.8;
 }
+    /* FACES */
     .cube .n1 {
         left: 0;
         top: 0;
@@ -84,4 +85,18 @@ body {
         top: 0;
         background: blueviolet;
         transform: translate3d(0,0,100px) translate3d(0,0,-200px) rotate3d(1,0,0,180deg);
+    }
+    /* DOTS */
+    .cube > span > span {
+        position: absolute;
+        margin: -10px 0 0 -10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+    .cube .d-50-50 {
+        left: 50%;
+        top: 50%;
     }
