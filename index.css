@@ -9,3 +9,13 @@ ol, ul { list-style: none; }
 a img { border: none; }
 :focus { outline: 0; }
 /* RESET CSS */
+
+/* COMMON */
+html { background-color: #fff; }
+body {
+    margin: 0 auto;
+    font-family: Arial;
+    font-size: 62.5%;
+    color: #444;
+}
+/* COMMON */
