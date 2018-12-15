@@ -58,5 +58,11 @@ body {
         background: yellow;
         transform-origin: 0 0;
         transform: translate3d(0,0,100px) rotate3d(0, 1, 0, 90deg);
-
+    }
+    .cube .n3 {
+        left: 0;
+        top: 100%;
+        background: darkturquoise;
+        transform-origin: 0 0;
+        transform: translate3d(0,0,100px) rotate3d(-1, 0, 0, 90deg);
     }
