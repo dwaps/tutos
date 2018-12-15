@@ -35,6 +35,9 @@ body {
     margin: -100px 0 0 -100px;
     width: 200px;
     height: 200px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    transform: perspective(900px) rotate3d(1,1,0,-45deg);
 }
 .cube > span {
     position: absolute;
@@ -46,4 +49,6 @@ body {
         left: 0;
         top: 0;
         background: red;
+        transform-origin: 50% 50%;
+        transform: translate3d(0,0,100px);
     }
