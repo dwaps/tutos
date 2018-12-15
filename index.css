@@ -28,7 +28,6 @@ body {
 }
 
 .cube {
-    background: purple; /* debug */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,4 +71,11 @@ body {
         background: blue;
         transform-origin: 100% 0;
         transform: translate3d(0,0,100px) rotate3d(0, -1, 0, 90deg);
+    }
+    .cube .n5 {
+        left: 0;
+        bottom: 100%;
+        background: green;
+        transform-origin: 0 100%;
+        transform: translate3d(0,0,100px) rotate3d(1, 0, 0, 90deg);
     }
