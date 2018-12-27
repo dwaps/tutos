@@ -6,3 +6,4 @@ const tags = {
 }
 
 Utils.init(tags)
+Game(tags.canvas).init()
