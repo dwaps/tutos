@@ -1,10 +1,14 @@
-const Game = (function (canvas) {
-  const context = canvas.getContext('2d')
-  console.log(context)
+define(function () {
 
-  const init = () => {
+  const Game = function (canvas) {
+    this.start = () => {
+      console.log('starting...')
+    }
   }
 
+  Game.prototype = {
+    context: canvas.getContext('2d')
+  }
 
-  return { init }
-})(canvas)
+  return Game
+})

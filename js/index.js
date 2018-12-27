@@ -1,9 +1,4 @@
-
-const tags = {
-  container: document.querySelector('#container'),
-  canvas: document.querySelector('#canvas'),
-  btScreenMode: document.querySelector('#bt-screen-mode'),
-}
-
-Utils.init(tags)
-Game(tags.canvas).init()
+require(['Constants', 'Utils', 'Game'], function ({ tags }, Utils, Game) {
+  Utils.init(tags)
+  new Game(tags.canvas).start()
+})

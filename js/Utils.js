@@ -1,4 +1,4 @@
-const Utils = (function () {
+define(function () {
   const html = document.documentElement
 
   let toggleFullscreen = false
@@ -31,4 +31,4 @@ const Utils = (function () {
   }
 
   return { init }
-})()
+})
