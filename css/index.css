@@ -29,6 +29,44 @@ body {
   background: url(../img/grid.jpg) center no-repeat;
 }
 
+#container.fullscreen,
+#canvas.fullscreen {
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+#bt-screen-mode {
+  display: block;
+  position: relative;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  color: bisque;
+  border: 1px solid hsl(34, 88%, 30%);
+  background: hsl(34, 88%, 50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+  #bt-screen-mode::before {
+    content: "Plein écran";
+  }
+
+#bt-screen-mode.fullscreen {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+  #bt-screen-mode.fullscreen::before {
+    content: "Mode normal";
+  }
+
 /* MEDIA QUERIES */
 @media all and (orientation: portrait) {
   #container {
