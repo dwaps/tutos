@@ -9,3 +9,86 @@ ol, ul { list-style: none; }
 a img { border: none; }
 :focus { outline: 0; }
 /* RESET CSS */
+
+@font-face {
+    font-family: "Luna";
+    src: url(Luna.ttf);
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Tahoma";
+}
+
+header {
+    font-family: "Luna";
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    margin: 0;
+    position: relative;
+    transform-style: inherit;
+    z-index: -1;
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+main {
+    background: orangered;
+    color: cornsilk;
+    z-index: 999;
+}
+
+main h1 {
+    text-align: center;
+    padding: 15px 0 10px;
+}
+
+main p {
+    padding: 25px;
+}
+
