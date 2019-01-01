@@ -13,14 +13,9 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
--->
+  -->
+
 <resources>
-
-    <string name="menu_refresh">Refresh</string>
-    <string name="menu_location">Location</string>
-    <string name="menu_settings">Settings</string>
-    <string name="main_description">This is a basic Activity showing an Action Bar which has been
-        styled.
-    </string>
-
+    <string name="sample_action">Sample action</string>
+    <string name="search_title">Search Contacts</string>
 </resources>
