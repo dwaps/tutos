@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Tutos</string>
-    <string name="toast_title">Super Toast</string>
-    <string name="custom_toast_message">Mince, vous n\'êtes pas connecté !</string>
-    <string name="default_toast_bt_text">Toast par défaut</string>
-    <string name="custom_toast_bt_text">Toast personnalisé</string>
-    <string name="default_toast_message">Voici un toast standard !</string>
+    <string name="message">Toucher n\'importe quel\nendroit de l\'écran</string>
+    <string name="alertdialog_title">Infos</string>
+    <string name="alertdialog_message"><![CDATA[
+            <h2><font color="#0a5f74">Bonjour !</font></h2>
+            <p><font color="#157289">Je suis une boîte de dialogue.</font></p>
+            <p><font color="#178dab">Je suis gentille.</font></p>
+    ]]></string>
+    <string name="alertdialog_thanks">Oh merci ! :)</string>
 </resources>
