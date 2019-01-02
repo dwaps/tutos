@@ -2,69 +2,58 @@ package fr.dwaps.tutos;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.support.annotation.ColorLong;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.ContextMenu;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Locale;
 
-    private boolean touchOnce = true;
+public class MainActivity extends AppCompatActivity {
+    private static int[] COLORS = { Color.RED, Color.GREEN, Color.BLUE };
+
+    private View mContainerRL;
+    private TextView mMessageTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mContainerRL = findViewById(R.id.activity_main_container_rl);
+        mMessageTV = findViewById(R.id.activity_main_message_tv);
+
+        registerForContextMenu(mContainerRL);
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        if (touchOnce) {
-            touchOnce = false;
-            showAlertDialog(null);
-        }
-        return super.onTouchEvent(event);
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+        menu.setHeaderTitle("Choisi une couleur");
+        menu.add(0, 0, 0, R.string.color_red);
+        menu.add(0, 1, 0, R.string.color_green);
+        menu.add(0, 2, 0, R.string.color_blue);
     }
 
-    private void showAlertDialog(String message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(false);
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        String yourColorChoice = getResources().getString(R.string.your_choice);
 
-        if (message == null) {
-            builder.setMessage(Html.fromHtml(getString(R.string.alertdialog_message)));
+        mContainerRL.setBackgroundColor(COLORS[item.getItemId()]);
+        mMessageTV.setText(String.format(Locale.FRANCE, yourColorChoice, item.getTitle()));
+        mMessageTV.setTextColor(Color.WHITE);
 
-            builder.setNegativeButton("Tais-toi !", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    touchOnce = true;
-                }
-            });
-
-            builder.setPositiveButton("Oui tu es gentille", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    showAlertDialog(getString(R.string.alertdialog_thanks));
-                }
-            });
-        }
-        else {
-            builder.setCancelable(true);
-            builder.setMessage(message);
-
-            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
-                @Override
-                public void onDismiss(DialogInterface dialog) {
-                    touchOnce = true;
-                }
-            });
-        }
-
-        builder.create().show();
+        return super.onContextItemSelected(item);
     }
 }

@@ -1,11 +1,8 @@
 <resources>
     <string name="app_name">Tutos</string>
-    <string name="message">Toucher n\'importe quel\nendroit de l\'écran</string>
-    <string name="alertdialog_title">Infos</string>
-    <string name="alertdialog_message"><![CDATA[
-            <h2><font color="#0a5f74">Bonjour !</font></h2>
-            <p><font color="#157289">Je suis une boîte de dialogue.</font></p>
-            <p><font color="#178dab">Je suis gentille.</font></p>
-    ]]></string>
-    <string name="alertdialog_thanks">Oh merci ! :)</string>
+    <string name="message">Toucher long sur\nn\'importe quel endroit de l\'écran</string>
+    <string name="color_red">Rouge</string>
+    <string name="color_green">Vert</string>
+    <string name="color_blue">Bleu</string>
+    <string name="your_choice">Vous avez choisi le %s</string>
 </resources>
