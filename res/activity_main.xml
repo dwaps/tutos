@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/padding_container"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/activity_main_default_toast_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_dark"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="showDefaultToast"
+        android:padding="@dimen/padding_container"
+        android:text="@string/default_toast_bt_text"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/activity_main_custom_toast_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_main_default_toast_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_bt"
+        android:background="@android:color/holo_red_light"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="showCustomToast"
+        android:padding="@dimen/padding_container"
+        android:text="@string/custom_toast_bt_text"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
