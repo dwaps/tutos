@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tutos</string>
+    <string name="home">Accueil</string>
+    <string name="about">A propos</string>
+    <string name="contact">Contact</string>
+    <string name="home_str">Bienvenue !</string>
+    <string name="about_str">Qui sommes nous ?</string>
+    <string name="contact_str">Nous contacter...</string>
+    <string name="test_menu">Cliquez sur le menu pour tester</string>
+</resources>
